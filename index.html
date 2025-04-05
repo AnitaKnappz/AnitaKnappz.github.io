@@ -1,7 +1,439 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anthony Cabrales - Data Center & Network Technician</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        .section {
+            margin-bottom: 2rem;
+        }
+        .tech-pill {
+            background-color: #e0f2fe;
+            color: #0369a1;
+            border-radius: 1rem;
+            padding: 0.25rem 0.75rem;
+            font-size: 0.85rem;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+            display: inline-block;
+        }
+        .cert-badge {
+            background-color: #dcfce7;
+            color: #166534;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .progress-bar {
+            height: 0.5rem;
+            background-color: #e5e7eb;
+            border-radius: 0.25rem;
+            overflow: hidden;
+        }
+        .progress-fill {
+            height: 100%;
+            background-color: #0891b2;
+        }
+        .job-title {
+            color: #0c4a6e;
+            font-weight: 600;
+        }
+        .time-period {
+            color: #6b7280;
+            font-style: italic;
+            font-size: 0.9rem;
+        }
+        @media print {
+            body {
+                background-color: white;
+            }
+            .container {
+                max-width: 100%;
+                padding: 0;
+            }
+            .section {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <div class="container mx-auto px-4 py-8 max-w-5xl">
+        <!-- Header -->
+        <header class="flex flex-col md:flex-row items-center justify-between mb-8 pb-6 border-b border-gray-200">
+            <div class="flex items-center mb-4 md:mb-0">
+                <div class="w-40 h-40 bg-gray-200 rounded-full overflow-hidden flex-shrink-0 border-4 border-cyan-600">
+                    <!-- Placeholder for profile image -->
+                    <div class="w-full h-full bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center text-white text-4xl font-bold">
+                        AC
+                    </div>
+                </div>
+                <div class="ml-6">
+                    <h1 class="text-4xl font-bold text-gray-800">Anthony Cabrales</h1>
+                    <p class="text-xl text-cyan-700 font-semibold mt-1">Data Center & Network Technician</p>
+                    <div class="mt-2 flex flex-wrap">
+                        <span class="tech-pill bg-cyan-100 text-cyan-800"><i class="fas fa-server mr-1"></i> Server Management</span>
+                        <span class="tech-pill bg-blue-100 text-blue-800"><i class="fas fa-network-wired mr-1"></i> Network Infrastructure</span>
+                        <span class="tech-pill bg-green-100 text-green-800"><i class="fas fa-shield-alt mr-1"></i> Cybersecurity</span>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-gray-50 p-4 rounded-lg shadow-sm">
+                <div class="flex items-center mb-2">
+                    <i class="fas fa-map-marker-alt text-gray-600 w-6"></i>
+                    <span>Anaheim, California</span>
+                </div>
+                <div class="flex items-center mb-2">
+                    <i class="fas fa-phone text-gray-600 w-6"></i>
+                    <span>657-706-5428</span>
+                </div>
+                <div class="flex items-center mb-2">
+                    <i class="fas fa-envelope text-gray-600 w-6"></i>
+                    <span>anthonycabrales7@proton.me</span>
+                </div>
+                <div class="flex items-center">
+                    <i class="fab fa-linkedin text-gray-600 w-6"></i>
+                    <a href="https://www.linkedin.com/in/anthony-cabrales-300721334" class="text-blue-600 hover:underline">LinkedIn Profile</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Profile Section -->
+        <section class="section bg-white p-6 rounded-lg shadow-sm">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                <i class="fas fa-user-circle text-cyan-600 mr-2"></i>Professional Profile
+            </h2>
+            <p class="text-gray-700 leading-relaxed">
+                Detail-oriented and proactive Data Center and Network Technician with hands-on experience at Northrop Grumman, specializing in server management, network infrastructure, and data center operations. Adept in client communication, assessing server needs, maintaining operational efficiency, and managing service tickets via ServiceNow. Skilled in managing Dell R600 series servers, Cisco and Palmetto networking equipment, ESXware virtualization, and iDRAC configurations for remote access. Holding CompTIA A+, Network+, and Security+ certifications, and actively pursuing Linux+ to deepen technical expertise. Passionate about leveraging this experience to transition into a cybersecurity role, with a strong focus on network security and infrastructure protection.
+            </p>
+        </section>
+
+        <!-- Employment History -->
+        <section class="section mt-8 bg-white p-6 rounded-lg shadow-sm">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                <i class="fas fa-briefcase text-cyan-600 mr-2"></i>Employment History
+            </h2>
+
+            <!-- Northrop Grumman -->
+            <div class="mb-6 pb-6 border-b border-gray-100">
+                <div class="flex flex-col md:flex-row md:justify-between mb-2">
+                    <h3 class="job-title text-xl">Data Center Tech</h3>
+                    <div class="time-period">January 2025 — Present</div>
+                </div>
+                <div class="text-gray-600 font-medium mb-3">Northrop Grumman (MAXX internship), Redondo Beach</div>
+                <ul class="list-disc list-outside ml-5 text-gray-700 space-y-2">
+                    <li>Configured iDRAC (Integrated Dell Remote Access Controller) for remote management and troubleshooting, ensuring timely and secure server access.</li>
+                    <li>Collaborated with clients to assess their server and network needs, providing recommendations for improvements and ensuring satisfaction with services.</li>
+                    <li>Conducted regular server and network health checks, proactively identifying and addressing potential issues to minimize downtime.</li>
+                    <li>Managed and resolved service tickets via ServiceNow, ensuring prompt and effective resolution of client issues while maintaining service level agreements (SLAs).</li>
+                    <li>Configured and maintained Cisco and Palmetto networking equipment to support reliable network connectivity and data transfer.</li>
+                </ul>
+            </div>
+
+            <!-- Securitas -->
+            <div class="mb-6 pb-6 border-b border-gray-100">
+                <div class="flex flex-col md:flex-row md:justify-between mb-2">
+                    <h3 class="job-title text-xl">Security Officer</h3>
+                    <div class="time-period">July 2024 — December 2024</div>
+                </div>
+                <div class="text-gray-600 font-medium mb-3">Securitas, Irvine</div>
+                <ul class="list-disc list-outside ml-5 text-gray-700 space-y-2">
+                    <li>Conducted regular patrols to maintain order and security presence</li>
+                    <li>Inspected doors, windows, and gates for breaches</li>
+                    <li>Prepared detailed incident and investigation reports</li>
+                    <li>Reviewed security footage and alarm system reports</li>
+                    <li>Investigated threats to safeguard assets, employees, and guests</li>
+                </ul>
+            </div>
+
+            <!-- Enjoi Resorts -->
+            <div class="mb-6 pb-6 border-b border-gray-100">
+                <div class="flex flex-col md:flex-row md:justify-between mb-2">
+                    <h3 class="job-title text-xl">Sales Consultant</h3>
+                    <div class="time-period">May 2021 — April 2024</div>
+                </div>
+                <div class="text-gray-600 font-medium mb-3">Enjoi Resorts, Myrtle Beach</div>
+                <ul class="list-disc list-outside ml-5 text-gray-700 space-y-2">
+                    <li>Identified customer needs through sales calls and in-person meetings</li>
+                    <li>Consistently achieved top sales, ranging from $100k to $150k monthly</li>
+                    <li>Excelled in overcoming objections through persuasive demos and communications</li>
+                    <li>Provided clear, friendly guidance on policies and procedures</li>
+                    <li>Resolved order inquiries by assessing needs and delivering solutions</li>
+                </ul>
+            </div>
+
+            <!-- Monster Reservations -->
+            <div>
+                <div class="flex flex-col md:flex-row md:justify-between mb-2">
+                    <h3 class="job-title text-xl">Customer Service Representative</h3>
+                    <div class="time-period">February 2020 — May 2021</div>
+                </div>
+                <div class="text-gray-600 font-medium mb-3">Monster Reservations, Myrtle Beach</div>
+                <ul class="list-disc list-outside ml-5 text-gray-700 space-y-2">
+                    <li>Provided friendly, knowledgeable support by resolving order inquiries</li>
+                    <li>Anticipated customer needs to maximize satisfaction and support</li>
+                    <li>Built strong customer relationships through personalized service and effective problem-solving</li>
+                    <li>Reduced call duration from 15 minutes to 5 minutes, enhancing efficiency and satisfaction</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section class="section mt-8 bg-white p-6 rounded-lg shadow-sm">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                <i class="fas fa-graduation-cap text-cyan-600 mr-2"></i>Education
+            </h2>
+            <div class="mb-4">
+                <div class="flex flex-col md:flex-row md:justify-between mb-2">
+                    <h3 class="text-xl text-gray-800 font-semibold">Bachelor of Computer Science</h3>
+                    <div class="time-period">Expected June 2027</div>
+                </div>
+                <div class="text-gray-600 font-medium">Fullerton College, Fullerton</div>
+            </div>
+
+            <h3 class="text-xl text-gray-800 font-semibold mt-6 mb-3">Completed Courses</h3>
+            <div class="flex flex-wrap">
+                <span class="tech-pill">Application Security</span>
+                <span class="tech-pill">Networking</span>
+                <span class="tech-pill">Operating System</span>
+                <span class="tech-pill">Intro to Cyber Security</span>
+                <span class="tech-pill">Incident Response</span>
+                <span class="tech-pill">Linux and Unix</span>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="section mt-8 bg-white p-6 rounded-lg shadow-sm">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                <i class="fas fa-project-diagram text-cyan-600 mr-2"></i>Home Lab Projects
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Project 1 -->
+                <div class="bg-gray-50 rounded-lg p-4 shadow-sm">
+                    <h3 class="text-lg font-semibold text-cyan-700 mb-2">
+                        <i class="fas fa-robot mr-2"></i>Home Automation System
+                    </h3>
+                    <p class="text-gray-700">
+                        Implemented home automation using Raspberry Pi 5 and IoT devices around the house, enabling smart control of lighting, security, and environmental systems.
+                    </p>
+                    <div class="mt-3 flex flex-wrap">
+                        <span class="tech-pill bg-indigo-100 text-indigo-800 text-xs">Raspberry Pi</span>
+                        <span class="tech-pill bg-indigo-100 text-indigo-800 text-xs">IoT</span>
+                        <span class="tech-pill bg-indigo-100 text-indigo-800 text-xs">Automation</span>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-gray-50 rounded-lg p-4 shadow-sm">
+                    <h3 class="text-lg font-semibold text-cyan-700 mb-2">
+                        <i class="fas fa-server mr-2"></i>Plex Media Server
+                    </h3>
+                    <p class="text-gray-700">
+                        Hosting Plex server at home with Unraid OS using Sonarr, Radarr, Prowlarr, etc., creating a centralized media system with automated content management.
+                    </p>
+                    <div class="mt-3 flex flex-wrap">
+                        <span class="tech-pill bg-indigo-100 text-indigo-800 text-xs">Plex</span>
+                        <span class="tech-pill bg-indigo-100 text-indigo-800 text-xs">Unraid OS</span>
+                        <span class="tech-pill bg-indigo-100 text-indigo-800 text-xs">Sonarr/Radarr</span>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-gray-50 rounded-lg p-4 shadow-sm">
+                    <h3 class="text-lg font-semibold text-cyan-700 mb-2">
+                        <i class="fas fa-database mr-2"></i>NAS Backup System
+                    </h3>
+                    <p class="text-gray-700">
+                        Designed and implemented a Network Attached Storage system to back up all devices, ensuring data redundancy and secure storage for personal and project files.
+                    </p>
+                    <div class="mt-3 flex flex-wrap">
+                        <span class="tech-pill bg-indigo-100 text-indigo-800 text-xs">NAS</span>
+                        <span class="tech-pill bg-indigo-100 text-indigo-800 text-xs">Data Backup</span>
+                        <span class="tech-pill bg-indigo-100 text-indigo-800 text-xs">RAID</span>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="bg-gray-50 rounded-lg p-4 shadow-sm">
+                    <h3 class="text-lg font-semibold text-cyan-700 mb-2">
+                        <i class="fas fa-plug mr-2"></i>UPS Power Management
+                    </h3>
+                    <p class="text-gray-700">
+                        Implemented UPS APC supply ensuring 99% uptime with critical home lab systems, configured power management protocols and automated shutdown procedures.
+                    </p>
+                    <div class="mt-3 flex flex-wrap">
+                        <span class="tech-pill bg-indigo-100 text-indigo-800 text-xs">UPS</span>
+                        <span class="tech-pill bg-indigo-100 text-indigo-800 text-xs">Power Management</span>
+                        <span class="tech-pill bg-indigo-100 text-indigo-800 text-xs">System Reliability</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="section mt-8 bg-white p-6 rounded-lg shadow-sm">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                <i class="fas fa-cogs text-cyan-600 mr-2"></i>Skills
+            </h2>
+            
+            <!-- Technical Skills -->
+            <div class="mb-6">
+                <h3 class="text-xl text-gray-800 font-semibold mb-3">Technical Skills</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <!-- Server Management -->
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span class="text-gray-700 font-medium">Server Management</span>
+                            <span class="text-cyan-700">Advanced</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 90%"></div>
+                        </div>
+                        <div class="mt-1 text-sm text-gray-600">Dell R600 series, ESXware virtualization, iDRAC</div>
+                    </div>
+                    
+                    <!-- Network Infrastructure -->
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span class="text-gray-700 font-medium">Network Infrastructure</span>
+                            <span class="text-cyan-700">Advanced</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 85%"></div>
+                        </div>
+                        <div class="mt-1 text-sm text-gray-600">Cisco, Palmetto equipment, Network monitoring</div>
+                    </div>
+                    
+                    <!-- System Administration -->
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span class="text-gray-700 font-medium">System Administration</span>
+                            <span class="text-cyan-700">Intermediate</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 75%"></div>
+                        </div>
+                        <div class="mt-1 text-sm text-gray-600">Windows Server, Linux, Unix</div>
+                    </div>
+                    
+                    <!-- Cybersecurity -->
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span class="text-gray-700 font-medium">Cybersecurity</span>
+                            <span class="text-cyan-700">Intermediate</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 70%"></div>
+                        </div>
+                        <div class="mt-1 text-sm text-gray-600">Network security, Application security, Incident response</div>
+                    </div>
+                    
+                    <!-- IT Service Management -->
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span class="text-gray-700 font-medium">IT Service Management</span>
+                            <span class="text-cyan-700">Advanced</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 85%"></div>
+                        </div>
+                        <div class="mt-1 text-sm text-gray-600">ServiceNow, Ticket management, SLA compliance</div>
+                    </div>
+                    
+                    <!-- Virtualization -->
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span class="text-gray-700 font-medium">Virtualization</span>
+                            <span class="text-cyan-700">Intermediate</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 75%"></div>
+                        </div>
+                        <div class="mt-1 text-sm text-gray-600">VMware, ESXi, Virtual networking</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Professional Skills -->
+            <div>
+                <h3 class="text-xl text-gray-800 font-semibold mb-3">Professional Skills</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                    <div class="bg-gray-50 p-3 rounded text-center">
+                        <i class="fas fa-comments text-cyan-600 text-xl mb-2"></i>
+                        <div class="text-gray-700 font-medium">Communication</div>
+                    </div>
+                    <div class="bg-gray-50 p-3 rounded text-center">
+                        <i class="fas fa-list-ol text-cyan-600 text-xl mb-2"></i>
+                        <div class="text-gray-700 font-medium">Prioritization</div>
+                    </div>
+                    <div class="bg-gray-50 p-3 rounded text-center">
+                        <i class="fas fa-puzzle-piece text-cyan-600 text-xl mb-2"></i>
+                        <div class="text-gray-700 font-medium">Problem Solving</div>
+                    </div>
+                    <div class="bg-gray-50 p-3 rounded text-center">
+                        <i class="fas fa-sync-alt text-cyan-600 text-xl mb-2"></i>
+                        <div class="text-gray-700 font-medium">Adaptability</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications -->
+        <section class="section mt-8 bg-white p-6 rounded-lg shadow-sm">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                <i class="fas fa-certificate text-cyan-600 mr-2"></i>Certifications
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="cert-badge">
+                    <div class="flex items-center justify-between">
+                        <h3 class="font-semibold text-green-800">CompTIA Secure Infrastructure Specialist</h3>
+                        <span class="text-sm text-gray-600">Jan 2025 - Jan 2028</span>
+                    </div>
+                    <p class="text-sm text-gray-700 mt-2">CSIS Stackable Certification demonstrating infrastructure security expertise</p>
+                </div>
+                
+                <div class="cert-badge">
+                    <div class="flex items-center justify-between">
+                        <h3 class="font-semibold text-green-800">CompTIA Security+ ce</h3>
+                        <span class="text-sm text-gray-600">Jan 2025 - Jan 2028</span>
+                    </div>
+                    <p class="text-sm text-gray-700 mt-2">Certification validating cybersecurity skills and best practices</p>
+                </div>
+                
+                <div class="cert-badge">
+                    <div class="flex items-center justify-between">
+                        <h3 class="font-semibold text-green-800">CompTIA IT Operations Specialist</h3>
+                        <span class="text-sm text-gray-600">Dec 2024 - Jan 2028</span>
+                    </div>
+                    <p class="text-sm text-gray-700 mt-2">CIOS Stackable Certification for IT operations and management</p>
+                </div>
+                
+                <div class="cert-badge">
+                    <div class="flex items-center justify-between">
+                        <h3 class="font-semibold text-green-800">CompTIA Network+ ce</h3>
+                        <span class="text-sm text-gray-600">Dec 2024 - Jan 2028</span>
+                    </div>
+                    <p class="text-sm text-gray-700 mt-2">Certification validating networking infrastructure capabilities</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="mt-8 text-center text-gray-500 text-sm py-4">
+            <p>© 2024 Anthony Cabrales - Data Center & Network Technician</p>
+            <p class="mt-1">This resume was created for professional purposes - Last updated: August 2024</p>
+        </footer>
+    </div>
 </body>
 </html>
